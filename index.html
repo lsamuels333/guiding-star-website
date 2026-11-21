@@ -1,219 +1,247 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Guiding Star Healing Arts — Coaching, astrology, and yoga with Lindsay Samuels.">
-  <title>Guiding Star Healing Arts | Lindsay Samuels</title>
-  <style>
-    :root {
-      --cream: #faf7f0;
-      --paper: #fffdf8;
-      --terracotta: #ad6349;
-      --green: #596b55;
-      --lavender: #e9e1ef;
-      --ink: #383a32;
-      --muted: #706e65;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.7;
-    }
-    a { color: inherit; }
-    header {
-      padding: 22px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      background: var(--paper);
-    }
-    .brand {
-      color: var(--green);
-      font-size: 1.35rem;
-      letter-spacing: .04em;
-      text-decoration: none;
-    }
-    nav { display: flex; gap: 24px; flex-wrap: wrap; }
-    nav a {
-      color: var(--muted);
-      text-decoration: none;
-      font: 0.9rem Arial, sans-serif;
-    }
-    nav a:hover { color: var(--terracotta); }
-    .hero {
-      text-align: center;
-      padding: 105px 24px 110px;
-      background: linear-gradient(135deg, var(--lavender), var(--cream) 72%);
-    }
-    .eyebrow {
-      color: var(--terracotta);
-      font: 0.78rem Arial, sans-serif;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-    }
-    h1 {
-      color: var(--green);
-      font-size: clamp(2.6rem, 6vw, 4.6rem);
-      font-weight: normal;
-      line-height: 1.15;
-      margin: 18px auto;
-    }
-    .hero p {
-      max-width: 650px;
-      margin: 20px auto 30px;
-      font-size: 1.2rem;
-      color: var(--muted);
-    }
-    .button {
-      display: inline-block;
-      background: var(--terracotta);
-      color: white;
-      padding: 13px 27px;
-      border-radius: 3px;
-      text-decoration: none;
-      font: 0.9rem Arial, sans-serif;
-      letter-spacing: .04em;
-    }
-    .button:hover { background: var(--green); }
-    section {
-      padding: 78px 24px;
-      scroll-margin-top: 20px;
-    }
-    .inner { max-width: 900px; margin: auto; }
-    h2 {
-      color: var(--green);
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      font-weight: normal;
-      text-align: center;
-      margin: 0 0 18px;
-    }
-    .intro {
-      max-width: 680px;
-      text-align: center;
-      margin: 0 auto 38px;
-      color: var(--muted);
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 42px;
-    }
-    .service {
-      background: var(--paper);
-      padding: 30px 24px;
-      border-top: 3px solid var(--terracotta);
-      text-align: center;
-    }
-    .service h3 {
-      color: var(--green);
-      font-size: 1.35rem;
-      font-weight: normal;
-    }
-    .service p { color: var(--muted); font-size: .98rem; }
-    .soft { background: var(--paper); }
-    .about {
-      background: var(--lavender);
-      text-align: center;
-    }
-    .about .inner { max-width: 720px; }
-    .connect {
-      text-align: center;
-      background: var(--green);
-      color: white;
-    }
-    .connect h2 { color: white; }
-    .connect p { margin-bottom: 28px; }
-    .connect .button {
-      background: var(--cream);
-      color: var(--green);
-    }
-    footer {
-      padding: 25px;
-      text-align: center;
-      color: var(--muted);
-      font: .82rem Arial, sans-serif;
-    }
-    @media (max-width: 700px) {
-      header { justify-content: center; text-align: center; }
-      nav { justify-content: center; gap: 15px; }
-      .hero { padding: 75px 22px; }
-      .services { grid-template-columns: 1fr; }
-      section { padding: 60px 22px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guiding Star Healing Arts with Lindsay Samuels — heart-centered coaching and mentorship, conscious astrology, and Hridaya Hatha Yoga.">
+<meta name="theme-color" content="#1a1a22">
+<title>Guiding Star Healing Arts | Lindsay Samuels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --cream:#F4EEDF;--forest:#2F5D50;--leaf:#5F8D6B;--terra:#C56B4E;
+ --gold:#D7A85A;--lav:#A58CC8;--river:#8EC7D8;--night:#1A1A22;
+ --ink:#282923;--muted:#68675f;--white:#fffaf1;--serif:"Cormorant Garamond",Georgia,serif;
+ --sans:"DM Sans",Arial,sans-serif;--max:1160px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.75 var(--sans)}
+a{color:inherit}img{max-width:100%;display:block}
+.site-header{position:sticky;top:0;z-index:10;background:rgba(26,26,34,.96);color:var(--cream);padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:24px;backdrop-filter:blur(12px)}
+.brand{font:500 1.35rem var(--serif);letter-spacing:.04em;text-decoration:none;color:var(--gold);white-space:nowrap}
+nav{display:flex;gap:clamp(12px,2.2vw,30px);flex-wrap:wrap;justify-content:flex-end}
+nav a{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--cream);opacity:.9}
+nav a:hover{color:var(--gold)}
+.hero{min-height:660px;display:grid;place-items:center;text-align:center;padding:110px 24px 120px;color:var(--cream);position:relative;overflow:hidden;background:radial-gradient(ellipse at 18% 22%,rgba(165,140,200,.32),transparent 34%),radial-gradient(ellipse at 82% 75%,rgba(197,107,78,.32),transparent 36%),linear-gradient(135deg,#1A1A22 0%,#2F5D50 58%,#34483f 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(215,168,90,.35);border-radius:50%;width:440px;height:440px;pointer-events:none}
+.hero:before{top:-270px;right:-100px}.hero:after{bottom:-330px;left:-130px;width:560px;height:560px}
+.hero-inner{max-width:900px;position:relative;z-index:1}
+.eyebrow{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08}
+h1{font-size:clamp(2.7rem,7vw,5.8rem);margin:24px 0;color:var(--cream)}
+.quote{font:italic clamp(1.25rem,2.3vw,1.75rem)/1.5 var(--serif);color:#f3e8d5;margin:0 auto 8px;max-width:720px}
+.attribution{color:var(--gold);font-size:.84rem;letter-spacing:.08em}
+.hero-sub{margin:34px auto 28px;color:#e5ded0;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+.button{display:inline-block;padding:13px 25px;background:var(--terra);color:#fffaf1;text-decoration:none;font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;border:1px solid var(--terra);transition:.2s}
+.button:hover{background:var(--gold);border-color:var(--gold);color:var(--night)}
+.button.outline{background:transparent;border-color:var(--gold);color:var(--cream)}
+.button.outline:hover{background:var(--gold);color:var(--night)}
+.section{padding:100px 24px}
+.wrap{max-width:var(--max);margin:auto}
+.narrow{max-width:820px;margin:auto}
+.section-head{text-align:center;max-width:820px;margin:0 auto 52px}
+.kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;font-weight:600;color:var(--terra)}
+h2{font-size:clamp(2.5rem,5vw,4rem);margin:10px 0 18px;color:var(--forest)}
+h3{font-size:1.8rem;margin:0 0 12px}
+.lead{font:1.28rem/1.55 var(--serif);color:var(--muted)}
+p{margin:0 0 18px}.muted{color:var(--muted)}
+.coaching{background:var(--cream);position:relative}
+.coaching-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:start}
+.coaching-copy h3{color:var(--terra);margin-top:32px}
+.principles{list-style:none;padding:0;margin:25px 0}
+.principles li{padding:13px 0 13px 26px;border-bottom:1px solid rgba(47,93,80,.18);position:relative}
+.principles li:before{content:"✧";position:absolute;left:0;color:var(--terra)}
+.quote-panel{padding:42px;background:var(--lav);color:var(--night);position:relative}
+.quote-panel:after{content:"";position:absolute;inset:12px;border:1px solid rgba(26,26,34,.2);pointer-events:none}
+.quote-panel h3{color:var(--night)}
+.quote-panel p{position:relative;z-index:1}
+.quote-panel .small{font-size:.86rem}
+.contact-line{margin-top:25px;font-weight:600}
+.astrology{background:var(--night);color:var(--cream);position:relative;overflow:hidden}
+.astrology:before{content:"";position:absolute;width:440px;height:440px;border-radius:50%;background:rgba(165,140,200,.13);filter:blur(5px);top:-240px;right:-90px}
+.astrology h2{color:var(--gold)}.astrology .lead{color:#e2d9c9}.astrology .kicker{color:var(--river)}
+.astrology-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(215,168,90,.35);border:1px solid rgba(215,168,90,.35);margin-top:45px}
+.astrology-card{padding:32px;background:rgba(47,93,80,.45);min-height:215px}
+.astrology-card:nth-child(2){background:rgba(165,140,200,.22)}
+.astrology-card:nth-child(3){background:rgba(197,107,78,.22)}
+.astrology-card:nth-child(4){background:rgba(142,199,216,.16)}
+.astrology-card h3{color:var(--gold)}
+.astrology-card p{color:#e8e2d7}
+.epic{background:var(--terra);color:#fffaf1}
+.epic h2{color:#fffaf1}.epic .kicker{color:var(--night)}.epic .lead{color:#fff1e8}
+.epic-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}
+.epic-mark{border:1px solid rgba(255,250,241,.6);padding:35px;text-align:center}
+.epic-mark strong{display:block;font:500 clamp(4rem,10vw,7rem)/.9 var(--serif);letter-spacing:.12em;color:var(--gold)}
+.epic-mark span{display:block;margin-top:20px;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase}
+.epic ul{padding-left:22px}
+.yoga{background:var(--lav);color:var(--night)}
+.yoga h2{color:var(--forest)}.yoga .kicker{color:#765a9b}
+.yoga-layout{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.yoga-card{background:var(--cream);padding:38px;border-left:5px solid var(--gold);box-shadow:0 16px 45px rgba(26,26,34,.08)}
+.yoga-card h3{color:var(--forest)}
+.schedule{display:grid;grid-template-columns:1fr auto;gap:8px 20px;margin:22px 0;padding:18px 0;border-top:1px solid rgba(47,93,80,.25);border-bottom:1px solid rgba(47,93,80,.25)}
+.schedule strong{color:var(--forest)}
+.about{background:var(--forest);color:var(--cream)}
+.about h2{color:var(--gold)}.about .kicker{color:var(--river)}
+.about-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.portrait-placeholder{min-height:400px;background:radial-gradient(circle at 50% 30%,rgba(215,168,90,.4),transparent 30%),linear-gradient(145deg,#5F8D6B,#1A1A22);display:grid;place-items:center;border:1px solid rgba(215,168,90,.55);color:var(--cream);font:italic 1.4rem var(--serif);text-align:center;padding:30px}
+.about p{color:#e6e4d9}
+.testimonials{background:var(--gold);color:var(--night)}
+.testimonials h2{color:var(--night)}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testimonial{background:var(--cream);padding:28px;font:italic 1.15rem/1.55 var(--serif)}
+.testimonial cite{display:block;margin-top:18px;font:600 .75rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--terra);font-style:normal}
+.connect{text-align:center;background:var(--night);color:var(--cream);padding:100px 24px}
+.connect h2{color:var(--lav)}.connect .lead{color:#e8e2d7}
+.connect-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}
+.email{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)}
+footer{background:#111116;color:#bdb7aa;text-align:center;padding:25px;font-size:.76rem;letter-spacing:.06em}
+@media(max-width:800px){
+ .site-header{position:relative;flex-direction:column}.coaching-grid,.epic-layout,.yoga-layout,.about-layout{grid-template-columns:1fr;gap:35px}
+ .astrology-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}
+ .section{padding:72px 22px}.hero{min-height:570px}
+}
+@media(max-width:480px){nav{gap:12px}nav a{font-size:.68rem}.quote-panel,.yoga-card{padding:28px 24px}.schedule{font-size:.9rem}}
+</style>
 </head>
 <body>
-  <header>
-    <a class="brand" href="#">Guiding Star Healing Arts</a>
-    <nav>
-      <a href="#coaching">Coaching</a>
-      <a href="#astrology">Astrology</a>
-      <a href="#yoga">Yoga</a>
-      <a href="#about">About</a>
-      <a href="#connect">Connect</a>
-    </nav>
-  </header>
+<header class="site-header">
+ <a class="brand" href="#top">Guiding Star Healing Arts</a>
+ <nav aria-label="Main navigation">
+  <a href="#coaching">Coaching</a><a href="#astrology">Astrology</a><a href="#epic">EPIC</a><a href="#yoga">Yoga</a><a href="#about">About</a><a href="#connect">Connect</a>
+ </nav>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">Guiding Star Healing Arts</div>
+  <h1>Come home to your own knowing.</h1>
+  <p class="quote">“He who looks outside dreams. He who looks inside awakens.”</p>
+  <p class="attribution">— Carl Jung</p>
+  <p class="hero-sub">Coaching &amp; Mentorship · Conscious Astrology · Yoga</p>
+  <a class="button" href="#connect">Connect with Lindsay</a>
+ </div>
+</section>
 
-  <main>
-    <section class="hero">
-      <div class="eyebrow">Guiding Star Healing Arts</div>
-      <h1>"He who looks outside dreams.<br>He who looks inside awakens."</h1>
-      <p>- Carl Yung </p>
-      <p>Coaching &amp; Mentorship · Conscious Astrology · Yoga</p>
-      <a class="button" href="https://calendly.com/lindsaysamuels33/insight-conversation">Connect with Lindsay</a>
-    </section>
+<section class="section coaching" id="coaching">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Inner authority · Self-trust · Transformation</div><h2>Coaching &amp; Mentorship</h2>
+   <p class="lead">The source of change resides inside you.</p>
+  </div>
+  <div class="coaching-grid">
+   <div class="coaching-copy">
+    <p>At the core of all Coaching and Mentorship sessions I honor the principle that the source of change resides inside the client themself.</p>
+    <p>I believe that every person carries the capacity, wisdom, and directionality for their own healing within. It is an innate aspect of human consciousness that can be accessed by anyone at any time.</p>
+    <h3>This shows up in our 1:1 sessions as:</h3>
+    <ul class="principles">
+     <li>Asking rather than telling — I guide clients to find their own answers with intuitive questions rather than telling them what to do</li>
+     <li>An emphasis on exploration, presence, and inner alignment</li>
+     <li>Inviting a genuine interest within the client to experience new perspectives</li>
+     <li>Unraveling blockages and areas of stuckness in real time</li>
+     <li>Trusting the client's unique pace and process, inviting meaningful personal and/or professional transformation to unfold</li>
+    </ul>
+    <p>Individual sessions and longer-term Coaching &amp; Mentorship experiences are available. Reach out to learn about current offerings and pricing.</p>
+    <a class="button" href="#connect">Inquire about coaching</a>
+   </div>
+   <aside class="quote-panel">
+    <h3>A space for your own answers.</h3>
+    <p>Coaching and Mentorship containers are a multi-session experience designed to identify and shift out of the unconscious patterns that keep us feeling limited and stuck.</p>
+    <p>In these containers you receive:</p>
+    <ul class="small">
+     <li>a clearly defined, safe, intentional space of transformation</li>
+     <li>customized guidance in the form of weekly 1:1 sessions</li>
+     <li>access to Lindsay between sessions through messaging support</li>
+    </ul>
+    <p class="small">For more information, contact Lindsay or book a free 30-minute consultation to see if we're a good fit for working together.</p>
+   </aside>
+  </div>
+ </div>
+</section>
 
-    <section id="coaching">
-      <div class="inner">
-        <h2>Coaching &amp; Mentorship</h2>
-        <p class="intro">Your space for personal coaching and mentorship.</p>
-      </div>
-    </section>
+<section class="section astrology" id="astrology">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">A language for self-discovery</div><h2>Conscious Astrology</h2>
+   <p class="lead">All readings are infused with an intention to deepen the client's connection with their inner compass, catalyzing renewed inspiration and empowering them to live their most authentic life.</p>
+  </div>
+  <div class="astrology-grid">
+   <article class="astrology-card"><h3>Natal Chart Consult</h3><p>The position of the planets at the moment of birth offers a roadmap for aligning with one's inner compass, revealing the key themes shaping our life and consciousness. By exploring the natal chart, insights into gifts and challenges emerge, fostering deeper awareness, empowerment, and the freedom to live in harmony with one's purpose.</p></article>
+   <article class="astrology-card"><h3>Solar Return Consult</h3><p>Unlock the energetic themes at play each year, as the Sun returns to its exact position in the natal chart (around the time of your birthday). With an understanding of these influences, we can shape the year ahead with greater clarity, alignment, and purpose.</p></article>
+   <article class="astrology-card"><h3>Astrocartography</h3><p>Discover how planetary energies, calculated from your natal chart, interact with different regions across the globe. Receive personalized insights into locations that hold special significance or interest for you.</p></article>
+   <article class="astrology-card"><h3>Relationship Synastry</h3><p>We compare two natal charts to bring a deeper understanding of the play of energies and patterns between people. This can offer a fresh perspective and new tools for navigating relationships.</p></article>
+  </div>
+  <p style="text-align:center;margin:34px 0 0">Contact Lindsay for current pricing and availability.</p>
+ </div>
+</section>
 
-    <section id="astrology" class="soft">
-      <div class="inner">
-        <h2>Conscious Astrology</h2>
-        <p class="intro">Explore your birth chart as a tool for self-discovery and evolution.</p>
-        <div class="services">
-          <div class="service"><h3>Natal Chart</h3></div>
-          <div class="service"><h3>Solar Return</h3></div>
-          <div class="service"><h3>Astrocartography</h3></div>
-        </div>
-      </div>
-    </section>
+<section class="section epic" id="epic">
+ <div class="wrap epic-layout">
+  <div class="epic-mark"><strong>EPIC</strong><span>Embodying the Potential<br>Inherent in your Consciousness</span></div>
+  <div><div class="kicker">Your unique astrological blueprint</div><h2>EPIC Astrology &amp; Coaching</h2>
+   <p class="lead">A transformative exploration of the twelve astrological archetypes as they express within your unique birth chart.</p>
+   <p>I created the EPIC program as a transformative exploration of the twelve astrological archetypes as they express within your unique birth chart. EPIC is an acronym for Embodying the Potential Inherent in your Consciousness.</p>
+   <p>The EPIC Astrology Intro Package delves into the Superpowers and Achilles Heels (potential pitfalls) of each archetype as they manifest in your life and consciousness, sparking actionable, relevant insights for real-life alignment and change. This program is designed to help anyone, beginners and seasoned astrologers alike, to unlock their fullest potential.</p>
+   <p>Your EPIC Blueprint Intro Package includes three personalized one-hour sessions, crafted to guide you through a progressive journey of self-discovery, empowerment, and alignment with your life purpose.</p>
+   <p>EPIC Follow-Up Coaching Sessions offer personalized support to integrate and apply the insights from your EPIC Intro Package consistently in daily life.</p>
+   <p>EPIC Leadership &amp; Teams is designed for groups of any kind—businesses, families, sports teams, musicians, and more—to achieve their highest potential, elevating collaboration, performance, and purpose.</p>
+   <a class="button outline" href="#connect">Ask about EPIC</a>
+  </div>
+ </div>
+</section>
 
-    <section id="yoga">
-      <div class="inner">
-        <h2>Yoga</h2>
-        <p class="intro">Practice with me .</p>
-      </div>
-    </section>
+<section class="section yoga" id="yoga">
+ <div class="wrap yoga-layout">
+  <div><div class="kicker">Presence · Awareness · Embodiment</div><h2>Yoga</h2>
+   <p class="lead">A practice of continuity—bringing awareness and presence into movement, stillness, and daily life.</p>
+   <p>I have guided the healing and heart-centered practice of Hridaya Hatha Yoga since 2016, emphasizing a continuity of awareness, presence, and meditation even as the body moves, so that our life becomes our practice.</p>
+   <p>Having guided group studies of Patanjali's Yoga Sutras since 2020, it is one of my greatest passions to explore the embodiment of this wisdom with others.</p>
+   <p>Private, personalized yoga practice is also available. Contact Lindsay to inquire.</p>
+  </div>
+  <div class="yoga-card">
+   <div class="kicker">Online · Thursdays</div><h3>Thursday Evening Hridaya Yoga</h3>
+   <p>Join us for fellowship and shared aspiration as we explore our lived experience through the lens of yogic wisdom.</p>
+   <div class="schedule">
+    <span>Optional Sutras contemplation</span><strong>7:00–7:30 p.m.</strong>
+    <span>Hridaya Hatha Yoga</span><strong>7:30–8:30 p.m.</strong>
+   </div>
+   <p>Suggested donation: $15–20 for Hridaya Hatha Yoga, or $20–30 if joining us for both the Sutras contemplation and yoga practice.</p>
+   <a class="button" href="#connect">Ask about joining</a>
+  </div>
+ </div>
+</section>
 
-    <section id="about" class="about">
-      <div class="inner">
-        <h2>About Lindsay</h2>
-        <p class="intro">Meet Lindsay.</p>
-      </div>
-    </section>
+<section class="section about" id="about">
+ <div class="wrap about-layout">
+  <div class="portrait-placeholder">A little more about your guide…</div>
+  <div><div class="kicker">Meet your guide</div><h2>About Lindsay</h2>
+   <p>As a certified Insight Coach drawing from sixteen years of immersive study in wisdom traditions from around the world, it is my honor to support your unique path.</p>
+   <p>Having completed seventeen Hridaya ten-day silent meditation retreats and one ten-day Vipassana meditation retreat, these periods of introspection nurtured a depth of presence and connection within my own heart that has shaped my experience of life ever since.</p>
+   <p>Stabilizing in this perspective of heart-centered presence has become my continuous practice both on and off the mat.</p>
+   <p>I have guided hundreds of students in the practice of reconnecting with their inner being through the practice of Hridaya yoga. As a licensed Avatar Master since 2021, I have dedicated my life to the practice of understanding and managing consciousness and guiding others to do the same.</p>
+   <p>Offering the deeply profound and complimentary practices of Hridaya and Avatar, it is my life's work to support clients and students in going beyond their perceived limitations and moving forward with inner stability, connection, and trust.</p>
+  </div>
+ </div>
+</section>
 
-    <section id="connect" class="connect">
-      <div class="inner">
-        <h2>Let's Connect</h2>
-        <p>Begin with a complimentary Insight Conversation.</p>
-        <a class="button" href="https://calendly.com/lindsaysamuels33/insight-conversation">Schedule a Conversation</a>
-      </div>
-    </section>
-  </main>
+<section class="section testimonials">
+ <div class="wrap"><div class="section-head"><div class="kicker">Words from students</div><h2>Client Reflections</h2></div>
+  <div class="testimonial-grid">
+   <blockquote class="testimonial">“Lindsay is a gifted teacher, radiating passion and warmth, with an infectious love for people and life. Her presence embodies a beautiful energy that envelops everyone in love and welcome.”<cite>— Artur A.</cite></blockquote>
+   <blockquote class="testimonial">“Just being in her presence brings a sense of calm. She radiates wisdom and inspires trust, showing genuine care and passion for what she does. Practicing with her is truly a nurturing experience.”<cite>— Astrid B.</cite></blockquote>
+   <blockquote class="testimonial">“After each reading I felt a deep peace, like a piece of the puzzle of my life had fallen into place.”<cite>— Tracey G.</cite></blockquote>
+  </div>
+ </div>
+</section>
 
-  <footer>© 2026 Guiding Star Healing Arts</footer>
+<section class="connect" id="connect">
+ <div class="narrow"><div class="kicker">The first step is a conversation</div><h2>Let's Connect</h2>
+  <p class="lead">For current offerings, pricing, or to explore whether we'd be a good fit for working together, I'd love to connect.</p>
+  <div class="connect-actions"><a class="button" href="https://calendly.com/lindsaysamuels33/insight-conversation">Book a free 30-minute Insight Conversation</a><a class="button outline" href="mailto:lindsay@theguidingstar.life">Email Lindsay</a></div>
+  <p style="margin-top:32px"> <a class="email" href="mailto:lindsay@theguidingstar.life">lindsay@theguidingstar.life</a></p>
+ </div>
+</section>
+</main>
+<footer>© 2026 Guiding Star Healing Arts · Lindsay Samuels</footer>
 </body>
 </html>
