@@ -55,13 +55,26 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08}h1{font-size:
 .yoga .intro h2,.yoga .yoga-main-bubble h3{font-weight:700}
 .yoga .yoga-main-bubble > p:first-of-type strong{color:#B65F43}
 .yoga-reflections h3{text-align:center}
-/* A slightly wider, softer glow around the main section headings */
-.coaching .intro h2,.astrology .intro h2,.yoga .intro h2{
-  text-shadow:0 0 5px currentColor,0 0 13px rgba(197,107,78,.22),0 0 24px rgba(197,107,78,.12);
-}
+/* Keep heading lettering crisp; place the glow behind the text */
+.coaching .intro h2,.astrology .intro h2,.yoga .intro h2,
 .yoga-reflections h3{
-  text-shadow:0 0 5px rgba(182,95,67,.34),0 0 13px rgba(182,95,67,.24),0 0 22px rgba(182,95,67,.16);
+  position:relative;
+  isolation:isolate;
+  text-shadow:none;
 }
+.coaching .intro h2::before,.astrology .intro h2::before,
+.yoga .intro h2::before,.yoga-reflections h3::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:-.38em -1.15em;
+  border-radius:50%;
+  background:radial-gradient(ellipse at center,currentColor 0%,transparent 70%);
+  opacity:.19;
+  filter:blur(9px);
+  pointer-events:none;
+}
+.yoga-reflections h3::before{opacity:.25;filter:blur(10px)}
 </style>
 </head>
 <body>
