@@ -28,6 +28,17 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08}h1{font-size:
  .astro-price{font-size:.82rem;line-height:1.25;margin:4px 0 0}
 }
 
+
+/* Mobile coaching flow: philosophy before session approach */
+@media(max-width:800px){
+ .coaching-layout{display:flex;flex-direction:column}
+ .coaching-left,.coaching-copy{display:contents}
+ .coaching-portrait{order:1}
+ .coaching-copy .coaching-intro-copy{order:2}
+ .coaching-left>.coaching-detail-bubble{order:3}
+ .coaching-copy>.coaching-detail-bubble{order:4}
+}
+
 </style>
 </head>
 <body>
