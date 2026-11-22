@@ -99,4 +99,26 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08}h1{font-size:
 .yoga-reflection{margin:0;padding:24px 26px;border:1px solid rgba(173,126,48,.24);border-radius:20px;background:linear-gradient(145deg,rgba(255,252,244,.96),rgba(247,235,207,.91));box-shadow:0 8px 24px rgba(128,91,37,.10),0 0 22px rgba(218,166,65,.22),0 0 38px rgba(218,166,65,.10);font:400 1.12rem/1.7 "Lora",Georgia,serif}
 .yoga-reflection cite{margin-top:12px}
 @media(max-width:800px){.yoga.section{padding-top:52px}.yoga-reflection-grid{grid-template-columns:1fr}}
+
+/* Prayer-hands photograph with softly translucent yoga content panels */
+.yoga.section{
+  background-image:linear-gradient(145deg,rgba(249,241,222,.24),rgba(244,228,199,.30)),url("prayer%20hands.jpg");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+}
+.yoga .yoga-main-bubble,
+.yoga .yoga-details,
+.yoga .yoga-private-bubble{
+  background:linear-gradient(145deg,rgba(255,250,238,.78),rgba(250,230,194,.70));
+  border-color:rgba(173,126,48,.30);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
+.yoga .yoga-reflection{
+  background:linear-gradient(145deg,rgba(255,252,244,.82),rgba(247,235,207,.74));
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
 </style>
